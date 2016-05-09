@@ -29,6 +29,9 @@ public class Main {
 	}
 
 }
+# LICENSE
 
-# Commands
-# TODO
+- Mozilla Public License Version 2.0
+- More Informations at   http://choosealicense.com/licenses/mpl-2.0/#
+
+# Commands TODO
