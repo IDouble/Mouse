@@ -17,7 +17,7 @@ import java.awt.Robot;
 import java.awt.event.InputEvent;
 
 public class Mouse {
-	private GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice(); // Get Screen Height & Width
+    private GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice(); // Get Screen Height & Width
     private final int MAX_Y = gd.getDisplayMode().getHeight(); // Gets the Monitor Height & Width (Works with multiple Monitors)
     private final int MAX_X = gd.getDisplayMode().getWidth(); 
     private int mouseX = MouseInfo.getPointerInfo().getLocation().x; // Gets the x Coordinate of the Mouse 
