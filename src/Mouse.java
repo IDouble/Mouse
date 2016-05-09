@@ -2,6 +2,7 @@ package Mouse;
 
 /**
  * A simple Library for controlling the Mouse in Java.
+ * License : Mozilla Public License 2.0  /  http://choosealicense.com/licenses/mpl-2.0/#
  *
  * @author AYIDouble
  * @version 1.0
