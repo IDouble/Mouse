@@ -5,8 +5,8 @@ package Mouse;
  * License : Mozilla Public License 2.0  /  http://choosealicense.com/licenses/mpl-2.0/#
  *
  * @author AYIDouble
- * @version 1.0
- * @since 22.02.2016
+ * @version 1.1
+ * @since 26.06.2016
  */
 
 import java.awt.AWTException;
