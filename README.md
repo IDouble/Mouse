@@ -2,10 +2,11 @@
 A Simple Java API for controlling the mouse
 
 - works on multiple monitors
-- powerfull
 - easy to use
+- powerful
+- many functions
 
-I searched long for a simple Mouse class in Java but i found nothing who fitted my needs,so i writted a simple Java API for accessing the Mouse.
+I searched long to find a simple Mouse class for Java but I have found nothing that fits, so I writed a simple Java API for accessing the Mouse.
 
 # Example
 
@@ -33,5 +34,3 @@ public class Main {
 
 - Mozilla Public License Version 2.0
 - More Informations at   http://choosealicense.com/licenses/mpl-2.0/#
-
-# Commands TODO
