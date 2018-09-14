@@ -11,6 +11,8 @@ so I writed a simple Java API for accessing the Mouse.
 
 # Example
 
+As an example, I used it to program a game controller with Arduino (JArduino).
+
 ```
 import java.awt.AWTException;
 
