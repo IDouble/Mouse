@@ -1,4 +1,4 @@
-# Mouse
+# 🖱 Mouse 🖱
 A Simple Java API for controlling the mouse
 
 - works on multiple monitors
@@ -6,10 +6,12 @@ A Simple Java API for controlling the mouse
 - powerful
 - many functions
 
-I searched long to find a simple Mouse class for Java but I have found nothing that fits, so I writed a simple Java API for accessing the Mouse.
+I searched long to find a simple Mouse class for Java but I have found nothing that fits, 
+so I writed a simple Java API for accessing the Mouse.
 
 # Example
 
+```
 import java.awt.AWTException;
 
 import Mouse.Mouse;
@@ -30,6 +32,7 @@ public class Main {
 	}
 
 }
+```
 # LICENSE
 
 - Mozilla Public License Version 2.0
