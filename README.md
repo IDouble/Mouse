@@ -1,13 +1,13 @@
 # 🖱 Mouse 🖱
-A Simple Java API for controlling the mouse
+A Simple Java Library for controlling the mouse
 
 - works on multiple monitors
 - easy to use
 - powerful
 - many functions
 
-I searched long to find a simple Mouse class for Java but I have found nothing that fits, 
-so I writed a simple Java API for accessing the Mouse.
+I searched long to find a simple Mouse Library for Java but I have found nothing that fits, 
+so I wrote a simple Java Library to access the Mouse.
 
 # Example
 
@@ -26,11 +26,6 @@ public class Main {
 		mouse = new Mouse();
 		mouse.animateMove(100, 150, 1);
 		mouse.click();
-		
-    	/*for(int i = 0; i < 100; i++) {
-    		Thread.sleep(3);
-    		mouse.moveLeft();
-		}*/
 	}
 
 }
