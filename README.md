@@ -1,15 +1,15 @@
 # 🖱 Mouse 🖱
-A Simple Java Library for controlling the mouse
+A Simple **Java Library** for controlling the **Mouse**, it is:
 
-- works on multiple monitors
-- easy to use
-- powerful
-- many functions
+- **Easy** to use
+- **Powerful**
+- **Works on multiple Monitors**
+- And has **many Functions**
 
-I searched long to find a simple Mouse Library for Java but I have found nothing that fits, 
-so I wrote a simple Java Library to access the Mouse.
+I searched long to find a simple **Mouse Library** for **Java** but I have found nothing that fits, 
+so I wrote a simple **Java Library** to access the **Mouse**.
 
-# Example
+# 📝 Example 📝
 
 ([**As an example, I used it to program a game controller with Arduino (JArduino).**](https://github.com/AYIDouble/IOT-Arduino-Game-Controller-Java))
 
