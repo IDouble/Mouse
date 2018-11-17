@@ -18,21 +18,25 @@ import java.awt.Robot;
 import java.awt.event.InputEvent;
 
 public class Mouse {
+	
     private GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice(); // Get Screen Height & Width
     private final int MAX_Y = gd.getDisplayMode().getHeight(); // Gets the Monitor Height & Width (Works with multiple Monitors)
     private final int MAX_X = gd.getDisplayMode().getWidth(); 
     private int mouseX = MouseInfo.getPointerInfo().getLocation().x; // Gets the x Coordinate of the Mouse 
     private int mouseY = MouseInfo.getPointerInfo().getLocation().y; // Gets the y Coordinate of the Mouse 
+    
     /**
      * you can use the methods of the robot and access his attributes
      */
     public Robot robot; //public for adjustments on the robot
+    
     /**
      * robot of the class will be created at initialize
      */
     public Mouse() throws AWTException{
     	robot = new Robot();
     }
+    
     /**
      * Initialize Keyboard with your own robot
      * Otherwise just initialize it with the no parameters
@@ -42,6 +46,7 @@ public class Mouse {
     public Mouse(Robot robot){
         this.robot = robot;
     }
+    
     /**
      * This will refresh the Mouse Position and save it to the variables mouseX and mouseY , you can access them with the getter methods.
      */
@@ -63,6 +68,7 @@ public class Mouse {
     }
     
     //Moving Mouse in Directions
+    
     /**
      * Moves the mouse 1 pixel up
      */
@@ -70,6 +76,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(mouseX,--mouseY );
     }
+    
     /**
      * Moves the mouse 1 pixel down
      */
@@ -77,6 +84,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(mouseX,++mouseY );
     }
+    
     /**
      * Moves the mouse 1 pixel to the left
      */
@@ -84,6 +92,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(--mouseX,mouseY );
     }
+    
     /**
      * Moves the mouse 1 pixel to the right
      */
@@ -93,6 +102,7 @@ public class Mouse {
     }
     
     //Moving Mouse in Directions with adjustable Mouse Speed
+    
     /**
      * Moves the mouse x pixel up
      * @param x , x stands for how many pixel to move
@@ -101,6 +111,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(mouseX,mouseY -= x );
     }
+    
     /**
      * Moves the mouse x pixel down
      * @param x , x stands for how many pixel to move
@@ -109,6 +120,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(mouseX,mouseY += x );
     }
+    
     /**
      * Moves the mouse x pixel to the left
      * @param x , x stands for how many pixel to move
@@ -117,6 +129,7 @@ public class Mouse {
     	refreshMouseInfo();
     	robot.mouseMove(mouseX -= x,mouseY );
     }
+    
     /**
      * Moves the mouse x pixel to the right
      * @param x , x stands for how many pixel to move
@@ -127,6 +140,7 @@ public class Mouse {
     }
     
     //Mouse Left Click
+    
     /**
      * performs a left click
      */
@@ -153,6 +167,7 @@ public class Mouse {
     }
     
     //Mouse double left Click
+    
     /**
      * performs a double left Click
      */
@@ -164,6 +179,7 @@ public class Mouse {
     }
     
     // Press & Release (example: if you want to mark a Text) 
+    
     /**
      * keeps the mouse pressed (example: if you want to mark a Text) , look at release()
      */
@@ -178,6 +194,7 @@ public class Mouse {
     }
     
     //Mouse Wheel
+    
     /**
      * moves mouseWheel 1 down
      */
@@ -203,6 +220,7 @@ public class Mouse {
     }
     
     //Mouse Wheel Click
+    
     /**
      * performs a mouse wheel click
      */
@@ -212,6 +230,7 @@ public class Mouse {
     }
     
     //Mouse Right Click
+    
     /**
      * performs a right click
      */
@@ -274,6 +293,7 @@ public class Mouse {
     }
     
     //Getters for Monitor Coordinates
+    
     /**
      * MAX_Y is the maximal Y Value of the Monitor or the Monitors.
      *
@@ -282,6 +302,7 @@ public class Mouse {
     public int getMAX_Y() {
 		return MAX_Y;
 	}
+    
     /**
      * MAX_Y is the maximal X Value of the Monitor or the Monitors.
      *
@@ -290,7 +311,9 @@ public class Mouse {
 	public int getMAX_X() {
 		return MAX_X;
 	}
+	
 	//Getters for Mouse Coordinates
+	
     /**
      * Gets the mouse x position.
      *
@@ -300,6 +323,7 @@ public class Mouse {
 		refreshMouseInfo();
 		return mouseX;
 	}
+	
 	/**
      * Gets the mouse y position.
      *
